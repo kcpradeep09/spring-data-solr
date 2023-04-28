@@ -14,16 +14,18 @@
 	<parent>
 		<groupId>org.springframework.data.build</groupId>
 		<artifactId>spring-data-parent</artifactId>
-		<version>2.5.0-SNAPSHOT</version>
+		<version>3.0.5</version>
 	</parent>
 
 	<properties>
 		<commons.collections>3.2.1</commons.collections>
 		<commons.lang>3.1</commons.lang>
 		<httpcomponents>4.3.1</httpcomponents>
-		<solr>8.5.2</solr>
-		<springdata.commons>2.5.0-SNAPSHOT</springdata.commons>
+		<solr>9.0.0</solr>
+		<springdata.commons>3.0.5</springdata.commons>
 		<java-module-name>spring.data.solr</java-module-name>
+		<jodatime>2.12.5</jodatime>
+		<javax-annotation-api>1.3.2</javax-annotation-api>
 	</properties>
 
 	<developers>
@@ -174,8 +176,8 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>javax.enterprise</groupId>
-			<artifactId>cdi-api</artifactId>
+			<groupId>jakarta.enterprise</groupId>
+			<artifactId>jakarta.enterprise.cdi-api</artifactId>
 			<version>${cdi}</version>
 			<scope>provided</scope>
 			<optional>true</optional>
